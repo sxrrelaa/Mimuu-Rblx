@@ -7,4 +7,4 @@ while true do
 	wait(math.random(1, 5))
 end
 
-testing 1
+
