@@ -1,6 +1,11 @@
 local playerOffset = Vector3.new(0, 20, -50)
+-- Camera Config
+local playerOffset = Vector3.new(0, 20, -50) -- Adjusted offset for visibility
 local playerPosOffset = Vector3.new(0, 0, 0)
+local fieldOfView = 10 -- Small but functional for orthographic simulation
+local zoom = 4 -- More reasonable zoom value
 
+-- Services and References
 local player = game.Players.LocalPlayer
 local camera = game.Workspace.CurrentCamera
 local runService = game:GetService("RunService")
@@ -17,6 +22,7 @@ local maxZoom = 170
 local zoomSpeed = 10
 
 local fieldOfView = 10
+-- Initial Camera Setup
 camera.FieldOfView = fieldOfView
 camera.CameraType = Enum.CameraType.Scriptable
 
